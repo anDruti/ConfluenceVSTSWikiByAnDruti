@@ -7,7 +7,7 @@ for /f %%f in ('dir /b .') do (
     echo Found %%~nf
  pandoc.exe --eol=native --wrap=none -f html -t markdown %%f -o %%~nf.md
     
-  ) || echo Noghght found %%f.
+  ) || echo Not found %%f.
 )
 pause
 
